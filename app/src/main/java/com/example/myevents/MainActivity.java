@@ -1,5 +1,6 @@
 package com.example.myevents;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,9 +21,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,23 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        btn = findViewById(R.id.btn_next);
+        btn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+                openAdduser();
+            }
+        });
+    }
+
+    public void openAdduser() {
+
+        Intent intent = new Intent(this,add_user_details.class);
+        startActivity(intent);
+
     }
 
     @Override
