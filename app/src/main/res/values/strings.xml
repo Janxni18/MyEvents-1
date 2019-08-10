@@ -20,4 +20,16 @@
         <item>All Events</item>
         <item>Bloom Events</item>
     </string-array>
+    <string name="title_activity_register">Register</string>
+
+    <string name="saga_events_dashboard">SAGA EVENTS DASHBOARD</string>
+
+    <string name="rate_us">RATE US</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="events">EVENTS</string>
+    <string name="about_us">ABOUT US</string>
+
+    <string name="login">LOGIN</string>
+
+    <string name="register">REGISTER</string>
 </resources>
