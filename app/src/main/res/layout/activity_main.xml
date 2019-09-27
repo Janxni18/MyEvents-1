@@ -193,7 +193,7 @@
                                     android:layout_width="50dp"
                                     android:id="@+id/imageView3"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/aboutus1"
+                                    android:src="@drawable/aboutus"
                                     android:layout_centerInParent="true"
                                     />
 
